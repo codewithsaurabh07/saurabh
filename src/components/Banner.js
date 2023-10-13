@@ -46,7 +46,7 @@ function Banner() {
     }
   }
   return (
-    <section className='Banner' id='home'>
+    <section className='banner' id='home'>
       <Container>
         <Row className='align-items-center'>
           <Col xs={12} md={6} xl={7}>
@@ -54,7 +54,10 @@ function Banner() {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className='tagline'>Welcome to my Profile</span>
-                  <h1>{`Hi I'm Armaan Ansari - `}<span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Video Editor", "Colorist", "Poster Designer" ]'><span className='wrap'>{text}</span></span></h1>
+                  <h1>{`Hi I'm Armaan Ansari`}</h1>
+                  <h1>
+                    <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Video Editor", "Colorist", "Poster Designer" ]'><span className='wrap'>{text}</span></span>
+                  </h1>
                   <p>I am proficient in advanced video Editing tools like Adobe premiere pro, DaVinci Resolve, Adobe Photoshop, Avid Media Composer, Adobe After Effects.</p>
                   <button onClick={() => console.log("connect")}>Let's Connect <ArrowRightCircle /></button>
                 </div>}
